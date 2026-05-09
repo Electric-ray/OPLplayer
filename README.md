@@ -1,8 +1,14 @@
 # OPLplayer
 
 DOS 시대 OPL3(YMF262) 사운드를 실시간으로 재생하는 플레이어입니다.  
-ESP32 adlcom ElectricRay 보드 → WiFi UDP / OTG USB 시리얼 → YMFM 에뮬레이션 → 오디오 출력
 
+---
+1. ESP32 adlcom ElectricRay 보드 → WiFi UDP → YMFM 에뮬레이션 → 오디오 출력
+
+또는
+
+2. SerialtoUSB 케이블 → USB or OTG → YMFM 에뮬레이션 → 오디오 출력
+---
 DOS에서 adlcom을 실행하고, esp32에 펌웨어를 올리고 사용하시면 됩니다.
 adlcom은 제 다른 저장소의 shadow register patch된 버전을 사용하셔야 시리얼포트로 무리없이 운용하실수 있습니다.
 (https://github.com/Electric-ray/adlcom)
