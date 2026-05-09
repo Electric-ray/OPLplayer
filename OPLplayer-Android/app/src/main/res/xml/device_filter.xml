@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- USB 시리얼 칩 필터: FTDI / CP210x / CH34x / Prolific -->
+<resources>
+    <usb-device vendor-id="1027" />   <!-- FTDI -->
+    <usb-device vendor-id="4292" />   <!-- CP210x (Silicon Labs) -->
+    <usb-device vendor-id="6790" />   <!-- CH34x (WinChipHead) -->
+    <usb-device vendor-id="1659" />   <!-- Prolific PL2303 -->
+</resources>

@@ -1,0 +1,28 @@
+// OPLplayer - Resource file
+// UTF-8, minimal: icon only (menus/dialogs handled in code)
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+
+// Icon
+IDI_OPLPLAYER   ICON   "OPLplayer.ico"
+IDI_SMALL       ICON   "small.ico"
+
+// String Table
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE   "OPLplayer"
+END
+
+#endif

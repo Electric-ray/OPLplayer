@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OPLplayer"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#1C1C1E"/>
+
+            <View
+                android:id="@+id/ledIndicator"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/led_inactive"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="adlcom ElectricRay"
+            android:textSize="12sp"
+            android:textColor="#8E8E93"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnUdp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="52dp"
+                android:text="UDP OPL3 ON"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#007AFF"
+                android:layout_marginEnd="6dp"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnUsb"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="52dp"
+                android:text="USB OPL3 ON"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#007AFF"
+                android:layout_marginStart="6dp"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="OPL3 chip reset"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#636366"
+            android:layout_marginBottom="20dp"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Volume"
+                android:textSize="14sp"
+                android:textColor="#1C1C1E"/>
+
+            <SeekBar
+                android:id="@+id/sliderVol"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Gain"
+                android:textSize="14sp"
+                android:textColor="#1C1C1E"/>
+
+            <SeekBar
+                android:id="@+id/sliderGain"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buffer"
+                android:textSize="14sp"
+                android:textColor="#1C1C1E"
+                android:layout_marginEnd="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerPrebuf"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UDP: -"
+            android:textSize="11sp"
+            android:textColor="#636366"
+            android:fontFamily="monospace"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event log"
+            android:textSize="12sp"
+            android:textColor="#8E8E93"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:textSize="11sp"
+            android:textColor="#1C1C1E"
+            android:fontFamily="monospace"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:gravity="top"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2025 ElectricRay / DOSmuseum"
+            android:textSize="11sp"
+            android:textColor="#8E8E93"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
